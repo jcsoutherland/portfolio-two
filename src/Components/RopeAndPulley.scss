@@ -89,8 +89,12 @@
   display: flex;
   flex-direction: column;
   z-index: 100;
-  height: clamp(325px, 1500px, 73vh);
   width: max(19px, 1.25vw);
+}
+
+.Rope-Overflow-Container {
+  height: 83vh;
+  animation: 3s scaleRopes;
 }
 
 .Rope-Container-L > *,
@@ -106,18 +110,8 @@
   background-repeat: repeat-y;
   height: 100%;
   width: max(11px, 0.75vw);
-}
-
-.Rope-T,
-.Rope-B {
-  background-image: url('../../public/Media/RopeEnd.svg');
-  background-size: 100% auto;
-  width: max(11px, 0.75vw);
-  height: max(31px, 2.1vw);
-}
-
-.Rope-T {
-  transform: scale(-1, -1);
+  border-radius: max(14px, 0.77vw) / max(16px, 1vw);
+  overflow: hidden;
 }
 
 .Oval-Mask-L,
@@ -126,8 +120,17 @@
   background-size: auto 90vh;
   background-position: 0px -65vh;
   height: max(16px, 1vw);
-  width: max(13px, 0.77vw);
+  width: max(15px, 1vw);
   border-radius: max(14px, 0.77vw) / max(16px, 1vw);
-  margin-top: -50%;
+  margin-top: -90%;
   z-index: -1;
+}
+
+@keyframes scaleRopes {
+  0% {
+    height: 142vh;
+  }
+  100% {
+    height: 83vh;
+  }
 }

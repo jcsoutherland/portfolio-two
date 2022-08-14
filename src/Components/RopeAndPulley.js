@@ -21,15 +21,15 @@ const RopeAndPully = () => {
           <img src='/media/Wheel-L.svg' alt='wheel left' className='Wheel-L' />
           <img src='/media/Wheel-R.svg' alt='wheel right' className='Wheel-R' />
           <div className='Rope-Container-L'>
-            <div className='Rope-T' />
-            <div className='Rope-L' />
-            <div className='Rope-B' />
+            <div className='Rope-Overflow-Container'>
+              <div className='Rope-L' />
+            </div>
             <div className='Oval-Mask-L' />
           </div>
           <div className='Rope-Container-R'>
-            <div className='Rope-T' />
-            <div className='Rope-R' />
-            <div className='Rope-B' />
+            <div className='Rope-Overflow-Container'>
+              <div className='Rope-R' />
+            </div>
             <div className='Oval-Mask-R' />
           </div>
         </div>
