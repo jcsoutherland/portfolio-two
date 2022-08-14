@@ -24,11 +24,13 @@ const RopeAndPully = () => {
             <div className='Rope-T' />
             <div className='Rope-L' />
             <div className='Rope-B' />
+            <div className='Oval-Mask-L' />
           </div>
           <div className='Rope-Container-R'>
             <div className='Rope-T' />
             <div className='Rope-R' />
             <div className='Rope-B' />
+            <div className='Oval-Mask-R' />
           </div>
         </div>
       </div>
