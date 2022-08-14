@@ -1,0 +1,61 @@
+.Landing-Card {
+  background-image: linear-gradient(0deg, #5ba1ff, #042c62);
+  border-radius: 32px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title-Text {
+  font-size: max(5vw, 52px);
+}
+
+.Info-Links {
+  color: white;
+  opacity: 60%;
+  font-weight: bold;
+  font-size: max(1vw, 12px);
+  margin: 2vh;
+  display: flex;
+  gap: 2vh;
+}
+
+.Main-Text-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+  margin-top: 4vh;
+  color: white;
+}
+
+.Title-Text {
+  line-height: 0.75em;
+}
+
+.Title-Subtext {
+  font-size: max(1vw, 12px);
+  overflow-wrap: wrap;
+  width: 60%;
+}
+
+.Name-Text {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: max(1.5vw, 16px);
+}
+
+.Project-Card {
+  margin-top: 4.5vh;
+  width: 100%;
+}
+
+.Landing-Image {
+  aspect-ratio: 375/315;
+  height: max(315px, 25vw);
+}

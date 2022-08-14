@@ -1,0 +1,121 @@
+.Landing-Container {
+  position: relative;
+  width: 100vw;
+  height: 12vh;
+}
+
+.Landing-Container > * {
+  position: absolute;
+  margin: auto;
+}
+
+.Rod-Container {
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 50%;
+}
+
+.Rod-Container > * {
+  position: absolute;
+  margin: auto;
+}
+
+.Rod-Holder-Left,
+.Rod-Holder-Right {
+  top: 0px;
+  bottom: 0px;
+  height: 50%;
+  z-index: 1;
+}
+
+.Rod-Holder-Left {
+  left: 0px;
+}
+
+.Rod-Holder-Right {
+  right: 0px;
+}
+
+.Wheel-Rod-Container {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.Wheel-Rod {
+  background-image: url('../../public/Media/WheelRod.svg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 50%;
+  width: 100%;
+}
+
+.Wheel-Container {
+  top: 0px;
+  left: 8vw;
+  right: 8vw;
+  bottom: 0px;
+}
+
+.Wheel-Container > * {
+  margin: auto;
+  position: absolute;
+}
+
+.Wheel-L,
+.Wheel-R {
+  top: 0px;
+  bottom: 0px;
+  width: max(19px, 1.25vw);
+}
+
+.Wheel-L,
+.Rope-Container-L {
+  left: 0px;
+}
+
+.Wheel-R,
+.Rope-Container-R {
+  right: 0px;
+}
+
+.Rope-Container-L,
+.Rope-Container-R {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  height: clamp(325px, 1500px, 73vh);
+  width: max(19px, 1.25vw);
+}
+
+.Rope-Container-L > *,
+.Rope-Container-R > * {
+  margin: auto;
+}
+
+.Rope-L,
+.Rope-R {
+  margin-top: -2px;
+  background-image: url('../../public/Media/Rope.svg');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  height: 100%;
+  width: max(11px, 0.75vw);
+}
+
+.Rope-T,
+.Rope-B {
+  background-image: url('../../public/Media/RopeEnd.svg');
+  background-size: 100% auto;
+  width: max(11px, 0.75vw);
+  height: max(31px, 2.1vw);
+}
+
+.Rope-T {
+  transform: scale(-1, -1);
+}
