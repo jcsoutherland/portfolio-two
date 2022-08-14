@@ -4,8 +4,16 @@ const LandingCard = () => {
   return (
     <div className='Landing-Card'>
       <ul className='Info-Links'>
-        <a href='#'>LinkedIn</a>
-        <a href='#'>Resume</a>
+        <a
+          href='https://www.linkedin.com/in/joey-southerland-ksu'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          LinkedIn
+        </a>
+        <a href='/Media/Resume.pdf' target='_blank' rel='noopener noreferrer'>
+          Resume
+        </a>
       </ul>
       <div className='Main-Text-Container'>
         <span className='Name-Text'>JOEY SOUTHERLAND's</span>
