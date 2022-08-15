@@ -1,0 +1,135 @@
+.Three-Container {
+  width: 100%;
+  height: 50%;
+  margin-top: 2vh;
+  animation: 1.3s slideInFromBottomThree;
+  transition-timing-function: cubic-belzier (0.25, 0.1, 0.25, 1);
+}
+
+.Moving-Icon-Container {
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  height: 17vh;
+  width: 21vw;
+}
+
+.Moving-Icon {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  font-size: max(16px, 1.8vh);
+  opacity: 1;
+  color: white;
+  font-weight: 700;
+  animation: 8s colorSwitcher 1s infinite, 30s moveIcon 1s linear infinite,
+    2s appear;
+}
+
+.Smiley-Screen {
+  user-select: none;
+  display: none;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/Media/SmileyScreen.svg');
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+  background-position-x: 50%;
+  background-position-y: 30%;
+  animation: 0.5s dissapear 4.7s;
+}
+
+@keyframes colorSwitcher {
+  0% {
+    color: red;
+  }
+  20% {
+    color: cyan;
+  }
+  40% {
+    color: lime;
+  }
+  60% {
+    color: orange;
+  }
+  80% {
+    color: yellow;
+  }
+  100% {
+    color: magenta;
+  }
+}
+
+@keyframes moveIcon {
+  0%,
+  100% {
+    transform: translate(263px, 148px);
+  }
+  12% {
+    transform: translate(0px, 20px);
+  }
+  15% {
+    transform: translate(20px, 0px);
+  }
+  28% {
+    transform: translate(243px, 148px);
+  }
+  31% {
+    transform: translate(263px, 128px);
+  }
+  41% {
+    transform: translate((163px, 0px));
+  }
+  51% {
+    transform: translate(0px, 118px);
+  }
+  54% {
+    transform: translate(30px, 148px);
+  }
+  64% {
+    transform: translate(233px, 0px);
+  }
+  67% {
+    transform: translate(263px, 30px);
+  }
+  77% {
+    transform: translate(30px, 148px);
+  }
+  80% {
+    transform: translate(0px, 118px);
+  }
+  90% {
+    transform: translate(143px, 0px);
+  }
+}
+
+@keyframes slideInFromBottomThree {
+  0%,
+  50% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0%,
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dissapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

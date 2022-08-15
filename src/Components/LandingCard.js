@@ -1,4 +1,5 @@
 import './LandingCard.scss'
+import ThreeElement from './ThreeElement'
 
 const LandingCard = () => {
   return (
@@ -22,11 +23,7 @@ const LandingCard = () => {
           Web developer dedicated to building beautiful modern websites.
         </span>
       </div>
-      <img
-        className='Landing-Image'
-        src='/media/IsometricRoom.png'
-        alt='isometric room picture'
-      />
+      <ThreeElement />
     </div>
   )
 }

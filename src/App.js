@@ -6,7 +6,7 @@ import RopeAndPulley from './Components/RopeAndPulley'
 function App() {
   return (
     <div className='App'>
-      <RopeAndPulley />
+      {/*<RopeAndPulley />*/}
       <LandingCard />
       <Card />
     </div>
