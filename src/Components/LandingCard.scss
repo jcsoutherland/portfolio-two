@@ -1,12 +1,7 @@
 .Landing-Card {
-  background-image: linear-gradient(0deg, #042c62, #5ba1ff, #042c62);
-  /*border-radius: 32px 32px 0px 0px;*/
-  position: absolute;
-  height: 188vh;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  /*top: 12vh;*/
+  background-image: linear-gradient(0deg, #5ba1ff, #042c62);
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +34,7 @@
 .Title-Subtext {
   font-size: max(1vw, 12px);
   overflow-wrap: wrap;
+  text-align: center;
   width: 60%;
 }
 

@@ -23,7 +23,8 @@ const LandingCard = () => {
           Web developer dedicated to building beautiful modern websites.
         </span>
       </div>
-      <ThreeElement />
+
+      {/*<ThreeElement />*/}
     </div>
   )
 }

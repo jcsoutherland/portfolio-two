@@ -11,11 +11,12 @@ export const Model = () => {
 function ThreeModel(props) {
   const [active, setActive] = useState(false)
   const ref = useRef()
+  let animSpeed = 0.025
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setActive(true)
-    }, 400)
+    }, 600)
     return () => {
       clearTimeout(timer)
       setActive(false)
@@ -24,7 +25,10 @@ function ThreeModel(props) {
 
   useFrame((state) => {
     if (ref.current.rotation.y > -1.6 && active) {
-      ref.current.rotation.y -= 0.015
+      ref.current.rotation.y -= animSpeed
+      if (animSpeed > 0) {
+        animSpeed -= 0.00008
+      }
     }
   })
   return (

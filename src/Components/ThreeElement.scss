@@ -3,10 +3,10 @@
   height: 50%;
   margin-top: 2vh;
   animation: 1.3s slideInFromBottomThree;
-  transition-timing-function: cubic-belzier (0.25, 0.1, 0.25, 1);
 }
 
 .Moving-Icon-Container {
+  outline: 1px solid red;
   cursor: pointer;
   position: relative;
   top: 30px;
