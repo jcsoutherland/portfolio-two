@@ -1,0 +1,30 @@
+$width: 35px;
+
+.nav-container {
+  cursor: pointer;
+  z-index: 10000;
+  width: $width;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container:hover {
+  width: calc($width + ($width * 0.4));
+}
+
+.nav-indicator {
+  width: 60%;
+  min-height: 3px;
+  background-color: white;
+  border-radius: 2vw;
+  margin: 3px;
+  margin-left: -2px;
+}
+
+.current,
+#Landing {
+  width: 100%;
+}

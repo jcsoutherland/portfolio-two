@@ -7,22 +7,12 @@
   align-items: center;
 }
 
-.Info-Links {
-  color: white;
-  opacity: 60%;
-  font-weight: bold;
-  font-size: max(1vw, 12px);
-  margin: 2vh;
-  display: flex;
-  gap: 2vh;
-}
-
 .Main-Text-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: bolder;
-  margin-top: 8vh;
+  margin-top: 12vh;
   color: white;
 }
 
@@ -42,11 +32,6 @@
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: max(1.5vw, 16px);
-}
-
-.Project-Card {
-  margin-top: 4.5vh;
-  width: 100%;
 }
 
 .Landing-Image {
