@@ -4,7 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import './ThreeElement.scss'
 
 export const Model = () => {
-  const gltf = useGLTF('/desk_low-poly/scene.gltf', true)
+  const gltf = useGLTF('/desk_with_anim/scene.glb', true)
   return <primitive object={gltf.scene} dispose={null} />
 }
 
@@ -23,16 +23,16 @@ function ThreeModel(props) {
     }
   }, [])
 
-  useFrame((state) => {
+  /*useFrame((state) => {
     if (ref.current.rotation.y > -1.6 && active) {
       ref.current.rotation.y -= animSpeed
       if (animSpeed > 0) {
         animSpeed -= 0.00008
       }
     }
-  })
+  })*/
   return (
-    <mesh ref={ref} position={[0, 0, 0]} rotation={[0, 1.6, 0]}>
+    <mesh ref={ref} position={[0, 0, 0]} rotation={[0, -1.6, 0]}>
       <Model />
     </mesh>
   )
@@ -70,12 +70,12 @@ function ThreeElement(props) {
         <PerspectiveCamera
           makeDefault
           lookAt={(0, 0, 0)}
-          position={[0, 420, 1000]}
-          rotation={[-0.3, 0, 0]}
+          position={[0, 63, 100]}
+          rotation={[-0.2, 0, 0]}
           fov='25'
         />
         <Suspense fallback={null}>
-          <Html position={[-98, 338, 0]}>
+          <Html position={[-18, 63, 0]}>
             <div className='Moving-Icon-Container' onClick={screenClickHandler}>
               <div className='Moving-Icon' ref={iconRef}>
                 [ JS ]

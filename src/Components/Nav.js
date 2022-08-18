@@ -9,6 +9,7 @@ const Nav = () => {
     setCurrent(document.getElementById('Landing'))
     current.classList.add('current')
   }, [])*/
+
   return (
     <div className='nav-container'>
       {sectionArray.map((label, index) => {

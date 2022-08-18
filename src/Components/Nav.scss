@@ -7,24 +7,28 @@ $width: 35px;
   position: fixed;
   left: 0;
   top: 50%;
-  display: flex;
-  flex-direction: column;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 10%,
+    0% 10%,
+    0% 30%,
+    100% 30%,
+    100% 40%,
+    0% 40%,
+    0% 60%,
+    100% 60%,
+    100% 70%,
+    0% 70%,
+    0% 90%,
+    100% 90%,
+    100% 100%,
+    0% 100%
+  );
+  height: 40px;
+  background-color: white;
 }
 
 .nav-container:hover {
   width: calc($width + ($width * 0.4));
-}
-
-.nav-indicator {
-  width: 60%;
-  min-height: 3px;
-  background-color: white;
-  border-radius: 2vw;
-  margin: 3px;
-  margin-left: -2px;
-}
-
-.current,
-#Landing {
-  width: 100%;
 }

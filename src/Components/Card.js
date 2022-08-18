@@ -1,4 +1,5 @@
 import './Card.scss'
+import Work from './Work'
 
 const Card = () => {
   return (
@@ -8,7 +9,9 @@ const Card = () => {
         <div className='spacer wave-layer-2' />
         <div className='spacer wave-layer-1' />
       </div>
-      <div className='Card-Box' />
+      <div className='Card-Box'>
+        <Work />
+      </div>
     </div>
   )
 }

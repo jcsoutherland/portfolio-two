@@ -1,0 +1,22 @@
+.work-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.work-container > * {
+  margin-bottom: 10vh;
+}
+
+.work-title {
+  color: #094a9f;
+  font-weight: 700;
+}
+
+.work-card-container {
+  outline: 1px solid red;
+  padding: 2em;
+  width: 100%;
+  display: flex;
+}

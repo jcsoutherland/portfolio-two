@@ -13,7 +13,7 @@ const LandingCard = () => {
         </span>
       </div>
 
-      {/*<ThreeElement />*/}
+      {<ThreeElement />}
     </div>
   )
 }
