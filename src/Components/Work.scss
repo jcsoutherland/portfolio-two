@@ -1,7 +1,7 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   align-items: center;
 }
 
@@ -15,8 +15,75 @@
 }
 
 .work-card-container {
-  outline: 1px solid red;
   padding: 2em;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+.work-card-name {
+  font-size: 2em;
+  font-weight: 700;
+  color: #094a9f;
+}
+
+.work-card-thumbnail-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.work-description-container {
+  margin-top: 2em;
+  flex-basis: 60%;
+  position: relative;
+}
+
+.work-card-description {
+  margin-bottom: 4em;
+}
+
+.work-card-button {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 4px;
+  outline: 2px solid #5ba1ff;
+  color: #5ba1ff;
+  font-weight: 700;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.button-disabled {
+  cursor: unset;
+  pointer-events: none;
+  outline: 2px solid lightgray;
+  color: lightgray;
+}
+
+.work-card-button:hover {
+  color: #f1f1f1;
+  background-color: #5ba1ff;
+}
+
+.work-card-description {
+  font-weight: 600;
+  color: #094a9f;
+}
+
+.work-button-container {
+  display: flex;
+  gap: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
