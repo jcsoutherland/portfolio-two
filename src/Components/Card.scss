@@ -33,15 +33,17 @@
   background-size: cover;
 }
 
+$wave-offset: -20%;
+
 .wave-layer-1 {
-  margin-top: -20%;
+  margin-top: $wave-offset;
   z-index: 3;
   background-image: url(../../public/Media/wave-border-1.svg);
   transform: translateY(60vh);
   animation: 1s slideInFromBottom forwards;
 }
 .wave-layer-2 {
-  margin-top: -20%;
+  margin-top: $wave-offset;
   z-index: 2;
   background-image: url(../../public/Media/wave-border-2.svg);
   transform: translateY(60vh);
@@ -52,6 +54,15 @@
   background-image: url(../../public/Media/wave-border-3.svg);
   transform: translateY(60vh);
   animation: 1s slideInFromBottom 0.3s forwards;
+}
+
+@media only screen and (max-width: 860px) {
+  .wave-layer-1 {
+    margin-top: -15%;
+  }
+  .wave-layer-2 {
+    margin-top: -15%;
+  }
 }
 
 @keyframes slideInFromBottom {

@@ -1,5 +1,10 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react'
-import { PerspectiveCamera, Html, useGLTF } from '@react-three/drei'
+import {
+  PerspectiveCamera,
+  Html,
+  useGLTF,
+  OrbitControls,
+} from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import './ThreeElement.scss'
 
@@ -32,7 +37,7 @@ function ThreeModel(props) {
     }
   })*/
   return (
-    <mesh ref={ref} position={[0, 0, 0]} rotation={[0, -1.6, 0]}>
+    <mesh ref={ref} position={[2, 0, 0]} rotation={[0, -1.6, 0]}>
       <Model />
     </mesh>
   )
@@ -67,15 +72,15 @@ function ThreeElement(props) {
         <ambientLight intensity={0.7} />
         <directionalLight intensity={0.5} position={[800, 1000, 3000]} />
         <directionalLight intensity={0.7} position={[0, 1000, 0]} />
+
         <PerspectiveCamera
           makeDefault
-          lookAt={(0, 0, 0)}
           position={[0, 63, 100]}
           rotation={[-0.2, 0, 0]}
           fov='25'
         />
         <Suspense fallback={null}>
-          <Html position={[-18, 63, 0]}>
+          <Html transform position={[-1.6, 53.3, -11]} rotation={[0, -0.03, 0]}>
             <div className='Moving-Icon-Container' onClick={screenClickHandler}>
               <div className='Moving-Icon' ref={iconRef}>
                 [ JS ]
