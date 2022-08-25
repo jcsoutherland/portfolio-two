@@ -1,5 +1,6 @@
 import './Work.scss'
 import workArray from '../Data/workArray'
+import iconsArray from '../Data/iconsArray'
 
 const Work = () => {
   return (
@@ -15,6 +16,7 @@ const Work = () => {
             description={e.description}
             codelink={e.codelink}
             websitelink={e.websitelink}
+            tech={e.tech}
           />
         )
       })}
@@ -35,7 +37,24 @@ const WorkCard = (props) => {
         />
       </div>
       <div className='work-description-container'>
-        <p className='work-card-description'>{props.description}</p>
+        <div className='work-card-description'>
+          {props.description}
+          <div className='work-tech-container'>
+            <span className='tech-label'>Tech: </span>
+            {iconsArray.map((e, index) => {
+              if (props.tech.includes(e)) {
+                return (
+                  <img
+                    key={index}
+                    className='tech-icon'
+                    src={`/Media/technology-icons/${e}.svg`}
+                    alt={`${e} icon`}
+                  />
+                )
+              }
+            })}
+          </div>
+        </div>
         <div className='work-button-container'>
           <div
             className={`work-card-button ${

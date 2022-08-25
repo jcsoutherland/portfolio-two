@@ -44,10 +44,11 @@
   margin-top: 2em;
   flex-basis: 60%;
   position: relative;
+  font-size: clamp(12px, 20px, 48px);
 }
 
 .work-card-description {
-  margin-bottom: 4em;
+  margin-bottom: 2.5em;
 }
 
 .work-card-button {
@@ -86,4 +87,49 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.tech-icon {
+  aspect-ratio: 1/1;
+  width: 2em;
+}
+
+.work-tech-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tech-label {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 2400px) {
+  .work-description-container {
+    font-size: 42px;
+  }
+  .work-card-name {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  .work-card-container {
+    flex-direction: column;
+  }
+  .work-container {
+    width: 90%;
+  }
+  .work-description-container {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .work-card-name {
+    font-size: 24px;
+  }
+  .work-title {
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+  }
 }

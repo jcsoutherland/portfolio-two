@@ -4,36 +4,40 @@ const workArray = [
     video: '',
     placeholderimage: '../Media/caveguythumbnail.png',
     description:
-      'Platform Skater is a Game Boy Advance game where the player must navigate through on-coming obstacles as long as possible. This game was built entirely in C using a GBA emulator.',
+      'Platform Skater is a Game Boy Advance game where the player must navigate through on-coming obstacles as long as possible.',
     codelink: 'https://github.com/jcsoutherland/GBAPlatform-Skater',
     websitelink: '',
+    tech: ['c'],
   },
   {
     name: 'Pictar.io',
     video: '',
     placeholderimage: '../Media/caveguythumbnail.png',
     description:
-      'Developed alongside a group of friends, I was the sole graphic designer as well as the primary game designer. Pictar.io is an online pictionary game where you can play various pictionary game modes and style your avatar to be true to you! While working on this project I used various design tools such as Adobe Illustrator, Photoshop, and Figma.',
+      'Developed alongside a group of friends, I was the sole graphic designer as well as a primary game designer. Pictar.io is an online pictionary game offering various game modes.',
     codelink: '',
     websitelink: 'https://pictar.io/',
+    tech: ['illustrator', 'photoshop', 'figma'],
   },
   {
     name: 'Faux Admin Panel',
     video: '',
     placeholderimage: '../Media/caveguythumbnail.png',
     description:
-      'In this project I designed a desktop application for a faux movie theater chain that allows staff of the theaters to request information from within their companies databases, such as: current movies, ticket sales, movie ratings, and theater locations. This project was developed in C# using Dapper to send query requests to the Microsoft SQL Server database.',
+      'Desktop application designed for a faux movie theater chain allowing staff of the theaters to request information from within their companies databases.',
     codelink: 'https://github.com/jcsoutherland/AdminDatabasePanel',
     websitelink: '',
+    tech: ['csharp', 'sql-server'],
   },
   {
     name: 'Cave Guy',
     video: '',
     placeholderimage: '../Media/caveguythumbnail.png',
     description:
-      'Cave Guy is a dungeon boss fighter game, designed to be a speedrunning game with difficult boss mechanics set to be mastered by the best. This game was built using C# and Microsoft XNA.',
+      'Cave Guy is a dungeon boss fighter game, designed to be a speedrunning game with difficult boss mechanics set to be mastered by the best.',
     codelink: 'https://github.com/jcsoutherland/Cave-Guy',
     websitelink: 'https://jcsoutherland.itch.io/cave-guy',
+    tech: ['csharp'],
   },
 ]
 

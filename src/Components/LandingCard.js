@@ -1,3 +1,4 @@
+import Header from './Header'
 import './LandingCard.scss'
 import ThreeElement from './ThreeElement'
 
@@ -12,8 +13,7 @@ const LandingCard = () => {
           applications
         </span>
       </div>
-
-      {<ThreeElement />}
+      <ThreeElement />
     </div>
   )
 }
