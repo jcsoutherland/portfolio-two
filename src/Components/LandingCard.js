@@ -6,7 +6,7 @@ const LandingCard = () => {
   return (
     <div className='Landing-Card'>
       <div className='Main-Text-Container'>
-        <span className='Name-Text'>JOEY SOUTHERLAND's</span>
+        <span className='Name-Text'>JOSEPH SOUTHERLAND's</span>
         <span className='Title-Text'>PORTFOLIO</span>
         <span className='Title-Subtext'>
           Developer dedicated to building beautiful modern websites and

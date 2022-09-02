@@ -2,7 +2,7 @@ const workArray = [
   {
     name: 'Platform Skater',
     video: '',
-    placeholderimage: '../Media/caveguythumbnail.png',
+    placeholderimage: '../Media/platform_skater_thumbnail.png',
     description:
       'Platform Skater is a Game Boy Advance game where the player must navigate through on-coming obstacles as long as possible.',
     codelink: 'https://github.com/jcsoutherland/GBAPlatform-Skater',
@@ -12,7 +12,7 @@ const workArray = [
   {
     name: 'Pictar.io',
     video: '',
-    placeholderimage: '../Media/caveguythumbnail.png',
+    placeholderimage: '../Media/pictario_thumbnail.png',
     description:
       'Developed alongside a group of friends, I was the sole graphic designer as well as a primary game designer. Pictar.io is an online pictionary game offering various game modes.',
     codelink: '',
@@ -22,7 +22,7 @@ const workArray = [
   {
     name: 'Faux Admin Panel',
     video: '',
-    placeholderimage: '../Media/caveguythumbnail.png',
+    placeholderimage: '../Media/faux_admin_panel_thumbnail.png',
     description:
       'Desktop application designed for a faux movie theater chain allowing staff of the theaters to request information from within their companies databases.',
     codelink: 'https://github.com/jcsoutherland/AdminDatabasePanel',
