@@ -1,8 +1,19 @@
 import './Work.scss'
 import workArray from '../Data/workArray'
 import iconsArray from '../Data/iconsArray'
+import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js'
+
+/*const scrollTrackingTimeline = new ScrollTimeline({
+  scrollOffsets: [
+    { target: workCardsArray, edge: 'end', threshold: '1' },
+    { target: workCardsArray, edge: 'start', threshold: '1' },
+  ],
+})*/
 
 const Work = () => {
+  const workCardsArray = document.querySelectorAll('.work-card-index')
+  console.log(workCardsArray)
+
   return (
     <div className='work-container'>
       <span className='Title-Text work-title'>WORK</span>
@@ -17,6 +28,7 @@ const Work = () => {
             codelink={e.codelink}
             websitelink={e.websitelink}
             tech={e.tech}
+            className='work-card-index'
           />
         )
       })}
