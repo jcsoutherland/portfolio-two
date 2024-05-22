@@ -1,0 +1,199 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    font-family: monospace;
+    padding: 1.5rem;
+    display: flex;
+    box-sizing: border-box;
+    gap: 0.5rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 70%;
+    padding-bottom: 10px;
+}
+
+.left.minimize{
+    display: none;
+}
+
+.right{
+    flex-basis: 100%;
+    position: relative;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 6px;
+    width: calc(100% - 12px);
+}
+
+h2:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+h2.minimize{
+    background-color: #222;
+}
+
+#max-min{
+    content: "-";
+    position: absolute;
+    right: 0.5rem;
+}
+
+.container-html, .container-css, .container-js{
+    position: relative;
+    border: 0;
+    width: calc(100% - 32px);
+    flex-basis: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-html:has(.code-container.minimize), .container-css:has(.code-container.minimize), .container-js:has(.code-container.minimize){
+    flex-basis: 0%;
+}
+
+.code-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    pointer-events: all;
+}
+
+.code-container.minimize{
+    display: none;
+}
+
+textarea[id*='editing-'], pre[id*='highlighting-'] {
+    position: absolute;
+}
+
+#editing-html, #editing-css, #editing-js, #highlighting-html, #highlighting-css, #highlighting-js {
+    padding: 10px;
+    margin: 10px;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+#editing-html, #editing-css, #editing-js, #highlighting-html, #highlighting-css, #highlighting-js, #highlighting-html *, #highlighting-css *, #highlighting-js * {
+    font-size: 12pt;
+    line-height: 15pt;
+    tab-size: 2;
+}
+
+#editing-html, #editing-css, #editing-js{
+    z-index: 1;
+    color: transparent;
+    background: transparent;
+    caret-color: white;
+    resize: none;
+    border: solid 1px gray;
+}
+
+#highlighting-html, #highlighting-css, #highlighting-js {
+    z-index: 0;
+    border-radius: 4px;
+}
+
+.fa-html5, .fa-css3-alt, .fa-js{
+    padding-right: 0.5rem;
+}
+
+.fa-right-to-bracket.fa-right-to-bracket{
+    color: #888;
+    transform: scale(1.2) rotate(180deg);
+    z-index: 99;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fa-right-to-bracket:hover{
+    color: #666;
+    cursor: pointer;
+}
+
+.fa-right-to-bracket.close{
+    transform: scale(1.2);
+}
+
+iframe{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+iframe.active{
+    outline: solid 1px white;
+}
+
+textarea::-webkit-scrollbar-corner, pre::-webkit-scrollbar-corner{
+    display: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    display: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover, textarea::-webkit-scrollbar-thumb:active {
+    background: black;
+    border-radius: 10px;
+    cursor: default;
+}
+
+pre::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+}
+
+.disable, .disable * {
+    opacity: 90%;
+}
+
+@media (max-width: 986px) {
+    .left{
+        display: none;
+    }
+    .fa-right-to-bracket.fa-right-to-bracket{
+        display: none;
+    }
+    body{
+        padding: 0;
+    }
+}

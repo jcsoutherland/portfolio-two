@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --font-size: 42px;
+}
+.App{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 128px 128px 264px 128px;
+    font-size: var(--font-size);
+    font-weight: 500;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    -webkit-text-fill-color: transparent;
+}
+@media (prefers-color-scheme: dark) {
+    .App{
+        background-color: #111;
+    }
+    .App, a{
+        color: #eee;
+    }
+}
+@media (max-width: 986px) {
+    .App{
+        --font-size: 36px;
+        padding: 64px 64px 264px 64px;
+    }
+}
+@media (max-width: 676px) {
+    .App{
+        --font-size: 20px;
+        padding: 32px 32px 264px 32px;
+    }
+}
+ul {
+    list-style: none;
+}
+.App > div > div{
+    background: linear-gradient(-135deg, #32e68c, #3395e5, #c03ff3, #ee5252) 0% text;
+    background-size: 140% 140%;
+    animation: gradient 1s paused;
+}
+.App > div{
+    width: 100%;
+    animation: enter 1s forwards paused;
+}
+b{
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+.App > div:nth-child(1){
+    font-size: calc(var(--font-size)*1.5);
+}
+.App > div:has(ol){
+    display: flex;
+    gap: 4rem;
+}
+.App > div ol{
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    padding-inline-start: 0px;
+    }
+.links{
+    margin-top: 2rem;
+}
+@keyframes gradient {
+    from {background-position: 0%;}
+    to {background-position: 135%;}
+}
+@keyframes enter {
+    from {opacity: 100%; transform: scale(1, 1);}
+    to {opacity: 0%; transform: scale(0.95, 0.85);}
+}
