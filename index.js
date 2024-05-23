@@ -77,9 +77,9 @@ function update(element) {
     let result_element = get_highlighter_content(element);
     if(result_element === null) return;
     let text = element.value
-    if(text[text.length-1] == "\n") {
-        text += " ";
-    }
+    // if(text[text.length-1] == "\n") {
+    //     text += " ";
+    // }
     result_element.innerHTML = text.replace(new RegExp("&", "g"), "&amp;").replace(new RegExp("<", "g"), "&lt;");
     Prism.highlightElement(result_element);
     if(!loading || (loading && text[text.length-1] == '}' || text[text.length-1] == '>')) run();
