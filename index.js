@@ -62,7 +62,7 @@ async function typeCode(iteration, htmlCode, cssCode, jsCode){
             iteration += 1
             typeCode(iteration, htmlCode, cssCode, jsCode);
         }
-    }, 50)
+    }, 1)
 }
 
 function updateByChar(element, text){
@@ -215,6 +215,9 @@ async function initWebsite(){
     codeBlocks[0] = await fetchHTML();
     codeBlocks[1] = await fetchCSS();
     codeBlocks[2] = await fetchJS();
+    codeBlocks[0].replace("\n", "&#13;");
+    codeBlocks[1].replace("\n", "&#13;");
+    codeBlocks[2].replace("\n", "&#13;");
     if(isReduced){
         pasteCode(codeBlocks[0], codeBlocks[1], codeBlocks[2]);
         return;
