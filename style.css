@@ -108,7 +108,12 @@ textarea[id*='editing-'], pre[id*='highlighting-'] {
     background: transparent;
     caret-color: white;
     resize: none;
-    border: solid 1px gray;
+    border: 0;
+    outline: solid 1px gray;
+}
+
+#editing-html:focus, #editing-css:focus, #editing-js:focus{
+    outline: solid 1px white;
 }
 
 #highlighting-html, #highlighting-css, #highlighting-js {
