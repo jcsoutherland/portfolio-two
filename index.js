@@ -66,10 +66,10 @@ async function typeCode(iteration, htmlCode, cssCode, jsCode){
 }
 
 function updateByChar(element, text){
-    if(text[0] != "\n"){
+    // if(text[0] != "\n"){
         element.value += text[0];
         update(element);
-    }
+    // }
     return text.substring(1);
 }
 

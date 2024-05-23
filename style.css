@@ -92,9 +92,8 @@ textarea[id*='editing-'], pre[id*='highlighting-'] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     box-sizing: border-box;
-    white-space: pre-wrap;
 }
 
 #editing-html, #editing-css, #editing-js, #highlighting-html, #highlighting-css, #highlighting-js, #highlighting-html *, #highlighting-css *, #highlighting-js * {
