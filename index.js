@@ -178,7 +178,7 @@ function run() {
 }
 
 async function fetchHTML() {
-    return await fetch('default.html')
+    return await fetch('index.html')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -189,7 +189,7 @@ async function fetchHTML() {
 }
 
 async function fetchCSS() {
-    return await fetch('default.css')
+    return await fetch('index.css')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -200,7 +200,7 @@ async function fetchCSS() {
 }
 
 async function fetchJS() {
-    return await fetch('default.js')
+    return await fetch('index.js')
     .then(response => response.text())
     .then((data) => {
         return data;
