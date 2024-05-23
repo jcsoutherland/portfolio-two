@@ -67,10 +67,8 @@ async function typeCode(iteration, htmlCode, cssCode, jsCode){
 }
 
 function updateByChar(element, text){
-    // if(text[0] != "\n"){
-        element.value += text[0];
-        update(element);
-    // }
+    element.value += text[0];
+    update(element);
     return text.substring(1);
 }
 
@@ -81,7 +79,7 @@ function update(element) {
     if(text[text.length-1] == "\n") {
         text += " ";
     }
-    result_element.innerHTML = text.replace(new RegExp("&", "g"), "&amp;").replace(new RegExp("<", "g"), "&lt;");
+    result_element.innerHTML = text.replace(new RegExp("&", "g"), "&amp;").replace(new RegExp("<", "g"), "&lt;").replace(/\n/g, '<br>\n');
     Prism.highlightElement(result_element);
     if(!loading || (loading && text[text.length-1] == '}' || text[text.length-1] == '>')) run();
 }
