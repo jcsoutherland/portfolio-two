@@ -187,6 +187,8 @@ pre::-webkit-scrollbar {
     height: 10px;
 }
 
+pre { white-space: pre-wrap; }
+
 .disable, .disable * {
     opacity: 90%;
 }

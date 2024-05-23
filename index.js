@@ -56,6 +56,7 @@ async function typeCode(iteration, htmlCode, cssCode, jsCode){
         element.scrollTop = element.scrollHeight;
         if(text.length == 0){
             clearInterval(timer);
+            sync_scroll(element)
             if(element.id === "editing-css"){
                 document.querySelector(".code-container:has(#editing-css)").classList.remove("disable");
             }
@@ -178,7 +179,7 @@ function run() {
 }
 
 async function fetchHTML() {
-    return await fetch('default.html')
+    return fetch('default.html')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -189,7 +190,7 @@ async function fetchHTML() {
 }
 
 async function fetchCSS() {
-    return await fetch('default.css')
+    return fetch('default.css')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -200,7 +201,7 @@ async function fetchCSS() {
 }
 
 async function fetchJS() {
-    return await fetch('default.js')
+    return fetch('default.js')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -219,7 +220,7 @@ async function initWebsite(){
         pasteCode(codeBlocks[0], codeBlocks[1], codeBlocks[2]);
         return;
     }
-    await typeCode(0, codeBlocks[0], codeBlocks[1], codeBlocks[2]);
+    typeCode(0, codeBlocks[0], codeBlocks[1], codeBlocks[2]);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
