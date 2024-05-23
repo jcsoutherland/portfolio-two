@@ -187,7 +187,10 @@ pre::-webkit-scrollbar {
     height: 10px;
 }
 
-pre { white-space: pre-wrap; }
+pre#highlighting-html, pre#highlighting-css, pre#highlighting-js {
+    overflow: auto;
+    white-space: pre-wrap;
+}
 
 .disable, .disable * {
     opacity: 90%;

@@ -18,7 +18,7 @@
             <h2 onclick="minimizeCode(this)"><i class="fa-brands fa-html5" style="color: #F06529;"></i>HTML<span id="max-min">-</span></h2>
             <div class="code-container disable">
                 <textarea id="editing-html" spellcheck="false" onscroll="sync_scroll(this);" onkeydown="block_key(event);"></textarea>
-                <pre id="highlighting-html" aria-hidden="true">
+                <pre id="highlighting-html" aria-hidden="true" contenteditable="true">
                     <code class="language-html" id="highlighting-content-html"></code>
                 </pre>
             </div>
@@ -27,7 +27,7 @@
             <h2 onclick="minimizeCode(this)"><i class="fa-brands fa-css3-alt" style="color: #2965F1"></i>CSS<span id="max-min">-</span></h2>
             <div class="code-container disable" >
                 <textarea id="editing-css" spellcheck="false" oninput="update(this);" onscroll="sync_scroll(this);" onkeydown="check_tab(this, event);"></textarea>
-                <pre id="highlighting-css" aria-hidden="true">
+                <pre id="highlighting-css" aria-hidden="true" contenteditable="true">
                     <code class="language-css" id="highlighting-content-css"></code>
                 </pre>
             </div>
@@ -36,7 +36,7 @@
             <h2 onclick="minimizeCode(this)"><i class="fa-brands fa-js" style="color: #F0DB4F"></i>JavaScript<span id="max-min">-</span></h2>
             <div class="code-container disable">
                 <textarea id="editing-js" spellcheck="false" onscroll="sync_scroll(this);" onkeydown="block_key(event);"></textarea>
-                <pre id="highlighting-js" aria-hidden="true">
+                <pre id="highlighting-js" aria-hidden="true" contenteditable="true">
                     <code class="language-javascript" id="highlighting-content-js"></code>
                 </pre>
             </div>

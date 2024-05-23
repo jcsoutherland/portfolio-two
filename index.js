@@ -216,10 +216,10 @@ async function initWebsite(){
     codeBlocks[0] = await fetchHTML();
     codeBlocks[1] = await fetchCSS();
     codeBlocks[2] = await fetchJS();
-    if(isReduced){
+    // if(isReduced){
         pasteCode(codeBlocks[0], codeBlocks[1], codeBlocks[2]);
         return;
-    }
+    // }
     typeCode(0, codeBlocks[0], codeBlocks[1], codeBlocks[2]);
 }
 
