@@ -62,7 +62,7 @@ async function typeCode(iteration, htmlCode, cssCode, jsCode){
             iteration += 1
             typeCode(iteration, htmlCode, cssCode, jsCode);
         }
-    }, 1)
+    }, 50)
 }
 
 function updateByChar(element, text){
@@ -178,7 +178,7 @@ function run() {
 }
 
 async function fetchHTML() {
-    return await fetch('index.html')
+    return await fetch('default.html')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -189,7 +189,7 @@ async function fetchHTML() {
 }
 
 async function fetchCSS() {
-    return await fetch('index.css')
+    return await fetch('default.css')
     .then(response => response.text())
     .then((data) => {
         return data;
@@ -200,7 +200,7 @@ async function fetchCSS() {
 }
 
 async function fetchJS() {
-    return await fetch('index.js')
+    return await fetch('default.js')
     .then(response => response.text())
     .then((data) => {
         return data;
